@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Santri;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,5 @@ Route::get('/', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
+//Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
+Route::get('/santri', [\App\Http\Controllers\SantriController::class, 'index']);
