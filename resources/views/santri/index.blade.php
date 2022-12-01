@@ -1,38 +1,58 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<body>
-    <form>
-        <div class="text-center">Tabel Informasi Data Santri</div>
-    <div class="table-responsive">
-        <table class="table table-hover">
-            <thead>
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title> -- </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    </head>
+    <body>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-lg-12 margin-tb">
+                    <div class="pull-left">
+                        <h2> -- </h2>
+                    </div>
+                    <div class="pull-right mb-2">
+                        <a class="btn btn-success" href="{{ route('santri.create') }}"> Create Santri</a>
+                    </div>
+                </div>
+            </div>
+            @if ($message = Session::get('success'))
+            <div class="alert alert-success">
+                <p>{{ $message }}</p>
+            </div>
+            @endif
+            <table class="table table-bordered">
                 <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Kelas</th>
-                    <th scope="col">No.Telepon</th>
-                    <th scope="col">Nama Wali</th>
-                    <th scope="col">Aksi</th>
+                    <th>No</th>
+                    <th>NISN</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>No.Telepon</th>
+                    <th>Nama Wali</th>
+                    <th>Aksi</th>
+                    <th width="280px">Action</th>
                 </tr>
-            </thead>
-            <tbody>
+                @foreach ($companies as $company)
                 <tr>
-                    <th scope="row">1</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ /*$company->id*/ }}</td>
+                    <td>{{  }}</td>
+                    <td>{{  }}</td>
+                    <td>{{  }}</td>
+                    <td>{{  }}</td>
+                    <td>{{  }}</td>
+                    <td>{{  }}</td>
+                    <td>
+                        <form action="{{ route('companies.destroy',$company->id) }}" method="Post">
+                            <a class="btn btn-primary" href="{{ route('companies.edit',$company->id) }}">Edit</a>
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-</form>
-</body>
-</html>
+                @endforeach
+            </table>
+            {!! $companies->links() !!}
+        </body>
+        </html>
