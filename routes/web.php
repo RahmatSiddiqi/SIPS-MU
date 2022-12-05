@@ -2,6 +2,9 @@
 
 use App\Models\Santri;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SantriController;
+use App\Http\Controllers\UstadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::resource('/santri', \App\Http\Controllers\SantriController::class);
+Route::get('/', [HomeController::class, 'index'])->name('/');
+
+Route::get('/santri', [SantriController::class, 'index'])->name('santri');
+
+Route::get('/ustad', [UstadController::class, 'index'])->name('ustad');

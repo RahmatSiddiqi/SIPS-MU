@@ -7,7 +7,7 @@
             <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
             <li class="nav-item mb-2 first">
-                <a href="pages/calendar.html" class="nav-link">
+                <a href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-file-description"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="pages/calendar.html" class="nav-link">
+                <a href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-dashboard"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="pages/calendar.html" class="nav-link">
+                <a href="{{ route('santri') }}" class="nav-link  {{ Route::is('santri') ? 'bg-primary' : ''}}">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-file-description"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -54,7 +54,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="pages/calendar.html" class="nav-link">
+                <a href="{{ route('ustad') }}" class="nav-link  {{ Route::is('ustad') ? 'bg-primary' : ''}}">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-file-description"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="pages/calendar.html" class="nav-link">
+                <a href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-file-description"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -86,7 +86,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="{{ route('laporan') }}" class="nav-link  {{ Route::is('laporan') ? 'bg-primary' : ''}}">
+                <a href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-file-description"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -102,7 +102,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="{{ route('pelanggaran') }}" class="nav-link {{ Route::is('pelanggaran') ? 'bg-primary' : ''}}">
+                <a href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-file-description"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
