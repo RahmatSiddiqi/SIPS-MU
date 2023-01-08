@@ -8,7 +8,6 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Santri</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -24,7 +23,7 @@
                     <div class="small-box text-dark " style="background-color: #E6CBA8 !important">
                         <div class="inner">
                             <h3>150</h3>
-                            <p>Jumlah Santri Saat Ini</p>
+                            <p>Jumlah Ustad Saat Ini</p>
                         </div>
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-medical-cross" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -42,28 +41,41 @@
                         <span class="input-group-text bg-primary">Cari</span>
                     </div>
                 </div>
-                <div class="col-md-12">
+                {{-- coba --}}
+                <div class="container mt-2">
+                    <div class="card" style="background-color: #E6CBA8">
+                        <div class="card-body">
+                            
+                            <div class="card-header text-lg-center">
+                                <h5>Tabel Informasi Data Ustad</h5>
+                            </div>
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama</th>
-                            <th>Nomor Telepon</th>
-                            <th>Jabatan</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <table class="table table-striped table-hover bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama</th>
+                                        <th>No Telepon</th>
+                                        <th>Jabatan</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
             </div>
             </div>
             <!-- /.row (main row) -->

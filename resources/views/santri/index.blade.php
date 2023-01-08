@@ -8,7 +8,6 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Santri</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -42,30 +41,45 @@
                         <span class="input-group-text bg-primary">Cari</span>
                     </div>
                 </div>
-                <div class="col-md-12">
+                {{-- coba --}}
+                <div class="container mt-2">
+                    <div class="card" style="background-color: #E6CBA8">
+                        <div class="card-body">
+                            
+                            <div class="card-header text-lg-center">
+                                <h5>Tabel Informasi Data Santri</h5>
+                            </div>
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>NISN</th>
-                            <th>Nama</th>
-                            <th>Kelas</th>
-                            <th>No.Telepon</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <table class="table table-striped table-hover bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>NISN</th>
+                                        <th>Nama</th>
+                                        <th>Kelas</th>
+                                        <th>Nomor Telepon</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
             </div>
             </div>
             <!-- /.row (main row) -->
